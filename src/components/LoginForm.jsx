@@ -14,7 +14,7 @@ const LoginForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await newRequest.post("/auth/login", { username, password });
+            const res = await newRequest.post("auth/login", { username, password });
             localStorage.setItem("currentUser", JSON.stringify(res.data));
             navigate("/hunts")
             window.location.reload()
