@@ -4,7 +4,7 @@ import './DeleteHunt.css';
 const DeleteHunt = ({ huntId }) => {
     const handleDelete = async () => {
         try {
-            await newRequest.delete(`hunts/${huntId}`);
+            await newRequest.delete(`/api/hunts/${huntId}`);
             window.location.reload();
         } catch (err) {
             console.log(err)

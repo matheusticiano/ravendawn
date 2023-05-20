@@ -34,7 +34,7 @@ const LikeButton = ({ huntId }) => {
   
   const checkLiked = async () => {
     try {
-      const response = await newRequest.get(`hunts/${huntId}/liked`);
+      const response = await newRequest.get(`/api/hunts/${huntId}/liked`);
       setLiked(response.data.liked);
     } catch (error) {
       console.error('Erro ao verificar se o usuário deu like:', error);
@@ -43,7 +43,7 @@ const LikeButton = ({ huntId }) => {
 
   const getLikesCount = async () => {
     try {
-      const response = await newRequest.get(`hunts/${huntId}/likes`);
+      const response = await newRequest.get(`/api/hunts/${huntId}/likes`);
       setLikesCount(response.data.likes);
     } catch (error) {
       console.error('Erro ao obter contagem de likes:', error);
@@ -53,10 +53,10 @@ const LikeButton = ({ huntId }) => {
   const handleLike = async () => {
     try {
       if (liked) {
-        await newRequest.post(`hunts/${huntId}/unlike`);
+        await newRequest.post(`/api/hunts/${huntId}/unlike`);
         setLikesCount(likesCount - 1);
       } else {
-        await newRequest.post(`hunts/${huntId}/like`);
+        await newRequest.post(`/api/hunts/${huntId}/like`);
         setLikesCount(likesCount + 1);
       }
       setLiked(!liked);

@@ -33,7 +33,7 @@ const SaveHunt = ({ huntId }) => {
 
   const checkSaved = async () => {
     try {
-      const response = await newRequest.get(`hunts/${huntId}/saved`);
+      const response = await newRequest.get(`/api/hunts/${huntId}/saved`);
       setSaved(response.data.saved);
     } catch (error) {
       console.error('Erro ao verificar se a hunt está salva:', error);
@@ -43,9 +43,9 @@ const SaveHunt = ({ huntId }) => {
   const handleSave = async () => {
     try {
       if (saved) {
-        await newRequest.post(`hunts/${huntId}/unsave`);
+        await newRequest.post(`/api/hunts/${huntId}/unsave`);
       } else {
-        await newRequest.post(`hunts/${huntId}/save`);
+        await newRequest.post(`/api/hunts/${huntId}/save`);
       }
       setSaved(!saved);
     } catch (error) {
