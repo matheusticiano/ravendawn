@@ -5,6 +5,5 @@ const newRequest = axios.create({
   withCredentials: true,
 });
 
-newRequest.defaults.headers.common["cookies"] = "accessToken=; SameSite=None";
 
 export default newRequest;
