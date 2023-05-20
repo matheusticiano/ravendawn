@@ -7,7 +7,7 @@ const LogoutButton = () => {
 
     const handleLogout = async () => {
         try {
-            await newRequest.post("/api/auth/logout");
+            await newRequest.post("auth/logout");
             localStorage.setItem("currentUser", null);
             navigate("/");
             window.location.reload();

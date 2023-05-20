@@ -19,7 +19,7 @@ const RegisterForm = () => {
       return;
     }
     try {
-      await newRequest.post("/api//auth/register", { username, email, password });
+      await newRequest.post("auth/register", { username, email, password });
       navigate("/login")
       window.location.reload();
       alert('Conta criada com sucesso!! Por favor faça login.');

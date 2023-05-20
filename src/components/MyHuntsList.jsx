@@ -15,7 +15,7 @@ const MyHuntsList = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await newRequest.get(`/api/hunts/myhunts?sortBy=${sortBy}`);
+                const response = await newRequest.get(`hunts/myhunts?sortBy=${sortBy}`);
                 setData(response.data);
                 setIsLoading(false);
             } catch (error) {
