@@ -1,9 +1,9 @@
-.fa-star {
+.fa-heart {
   font-size: x-large;
 }
 
-.fa-star.liked {
-  color: rgb(255, 247, 0);
+.fa-heart.liked {
+  color: rgb(255, 0, 0);
 }
 
 span {

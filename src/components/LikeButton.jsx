@@ -73,7 +73,7 @@ const LikeButton = ({ huntId }) => {
 
   return (
     <button onClick={handleLike}>
-      <i className={`fa fa-star${liked ? ' liked' : ''}`}></i> {/* Ícone de estrela */}
+      <i className={`fa fa-heart${liked ? ' liked' : ''}`}></i>
       <span>{likesCount}</span>
     </button>
   );

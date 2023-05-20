@@ -7,10 +7,16 @@
 
 .footer-info {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.footer-container p {
+.footer-container p3 {
   color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
   align-items: center;
   text-align: center;
 }

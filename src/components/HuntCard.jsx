@@ -8,12 +8,12 @@ const HuntCard = ({ hunt, location, level, image, profit, xp, huntId, showMenu }
     return (
         <div className="hunt-card">
             <img src={image} alt={hunt} />
-            <h2>{hunt}</h2>
+            <h9>{hunt}</h9>
             <div className='card-info'>
-                <p><strong>Location:</strong> {location}</p>
-                <p><strong>Level:</strong> {level}</p>
-                <p><strong>Profit Por Hora:</strong> {profit}</p>
-                <p><strong>Xp Por Hora:</strong> {xp}</p>
+                <p9><strong>Location:</strong> {location}</p9>
+                <p9><strong>Level:</strong> {level}</p9>
+                <p9><strong>Profit Por Hora:</strong> {profit}</p9>
+                <p9><strong>Xp Por Hora:</strong> {xp}</p9>
             </div>
             <div className='card-buttons'>
                 <LikeButton huntId={huntId} />
