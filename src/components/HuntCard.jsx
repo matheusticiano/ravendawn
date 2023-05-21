@@ -19,8 +19,9 @@ const HuntCard = ({ hunt, location, level, image, profit, xp, huntId, creator, d
                     <p9><strong>Profit Por Hora:</strong> {profit}</p9>
                 </div>
                 <p9><strong>Xp Por Hora:</strong> {xp}</p9>
+                <p9><strong>Created by: {creator}</strong></p9>
+                <p9>{data}</p9>
             </div>
-            <p9><strong>Created by: {creator} - {data}</strong></p9>
             <div className='card-buttons'>
                 <LikeButton huntId={huntId} />
                 <SaveHunt huntId={huntId} />
