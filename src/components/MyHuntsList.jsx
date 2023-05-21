@@ -76,6 +76,7 @@ const MyHuntsList = () => {
                                 xp={hunt.xp}
                                 huntId={hunt._id}
                                 showMenu={true}
+                                creator={hunt.creator}
                             />
                         ))}
                     </>

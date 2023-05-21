@@ -75,6 +75,7 @@ const HuntList = () => {
                                 profit={hunt.profit}
                                 xp={hunt.xp}
                                 huntId={hunt._id}
+                                creator={hunt.creator}
                             />
                         ))}
                     </>

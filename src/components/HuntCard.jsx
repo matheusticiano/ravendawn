@@ -4,7 +4,7 @@ import DeleteHunt from './DeleteHunt';
 import SaveHunt from './SaveHunts';
 
 
-const HuntCard = ({ hunt, location, level, image, profit, xp, huntId, showMenu }) => {
+const HuntCard = ({ hunt, location, level, image, profit, xp, huntId, creator, showMenu }) => {
     return (
         <div className="hunt-card">
             <img src={image} alt={hunt} />
@@ -15,6 +15,7 @@ const HuntCard = ({ hunt, location, level, image, profit, xp, huntId, showMenu }
                 <p9><strong>Profit Por Hora:</strong> {profit}</p9>
                 <p9><strong>Xp Por Hora:</strong> {xp}</p9>
             </div>
+            <p9><strong>Created by: {creator}</strong></p9>
             <div className='card-buttons'>
                 <LikeButton huntId={huntId} />
                 <SaveHunt huntId={huntId} />
