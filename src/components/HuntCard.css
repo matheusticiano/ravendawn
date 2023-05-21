@@ -71,3 +71,9 @@
 .borda-direita{
   border-right: 1px solid rgba(0, 0, 0, 0.65);;
 }
+
+.hunt-creator{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
