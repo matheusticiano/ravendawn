@@ -25,8 +25,8 @@ const HuntCard = ({ hunt, location, level, image, profit, xp, huntId, creator, d
                     </div>
                 </div>
                 <div className='hunt-creator'>
-                    <p10>created by: {creator}</p10>
-                    <p10>created at: {data}</p10>
+                    <p10>Created by: {creator}</p10>
+                    <p10>Created at: {data}</p10>
                 </div>
                 <div className='card-buttons'>
                     <LikeButton huntId={huntId} />
