@@ -35,8 +35,7 @@
     grid-template-rows: repeat(2, minmax(0, 70px));
     grid-row-gap: 20px;
     padding: 5px;
-    justify-content: left;
-    align-items: center;
+    text-align: left;
   }
   
   .card-buttons {
