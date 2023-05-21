@@ -74,6 +74,7 @@ const SavedHuntsList = () => {
                                 xp={hunt.xp}
                                 huntId={hunt._id}
                                 creator={hunt.creator}
+                                data={new Date(hunt.createdAt).toISOString().split("T")[0].split("-").reverse().join("-")}
                             />
                         ))}
                     </>

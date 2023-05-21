@@ -77,6 +77,7 @@ const MyHuntsList = () => {
                                 huntId={hunt._id}
                                 showMenu={true}
                                 creator={hunt.creator}
+                                data={new Date(hunt.createdAt).toISOString().split("T")[0].split("-").reverse().join("-")}
                             />
                         ))}
                     </>
