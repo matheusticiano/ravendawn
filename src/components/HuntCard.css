@@ -37,7 +37,6 @@
     padding: 5px;
     text-align: left;
     margin-top: 10px;
-    border: 1px solid rgb(167, 167, 167);
   }
   
   .card-buttons {
@@ -62,4 +61,8 @@
     display: flex;
     justify-content: right;
     align-items: center;
+  }
+
+.hunt-info {
+    border: 1px solid rgb(167, 167, 167);
   }

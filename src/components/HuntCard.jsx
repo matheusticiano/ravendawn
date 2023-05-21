@@ -7,6 +7,7 @@ import SaveHunt from './SaveHunts';
 const HuntCard = ({ hunt, location, level, image, profit, xp, huntId, creator, showMenu }) => {
     return (
         <div className="hunt-card">
+            <div className='hunt-info'>
             <img src={image} alt={hunt} />
             <h9>{hunt}</h9>
             <div className='card-info'>
@@ -25,6 +26,7 @@ const HuntCard = ({ hunt, location, level, image, profit, xp, huntId, creator, s
                     <DeleteHunt huntId={huntId} />
                 </div>
             )}
+            </div>
         </div>
     );
 };
